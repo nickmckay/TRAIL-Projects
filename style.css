@@ -190,3 +190,97 @@ figcaption {
   background: #000;
   display: block;
 }
+
+/* ── TRAIL Overview block ── */
+.trail-overview {
+  border-left: 4px solid var(--nau-gold);
+  padding: 1rem 1.25rem;
+  background: #f8f9fc;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 2rem;
+  font-size: 1.02rem;
+  color: var(--text);
+}
+.trail-overview p { margin: 0; }
+
+/* ── Tag filter bar ── */
+.tag-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  align-items: center;
+}
+.tag-filter-label {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-right: 0.25rem;
+  white-space: nowrap;
+}
+.tag-btn {
+  font-size: 0.8rem;
+  padding: 0.28rem 0.85rem;
+  border: 1px solid var(--nau-blue);
+  border-radius: 99px;
+  background: white;
+  color: var(--nau-blue);
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+  line-height: 1.4;
+}
+.tag-btn:hover,
+.tag-btn.active {
+  background: var(--nau-blue);
+  color: white;
+}
+
+/* ── Year sections ── */
+.year-section {
+  margin-bottom: 4rem;
+}
+.year-section > h2 {
+  font-size: 1.35rem;
+  color: var(--nau-blue);
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid var(--nau-gold);
+  margin: 0 0 1.5rem;
+}
+
+/* ── Track sub-sections (2025-26) ── */
+.track-section {
+  margin-bottom: 2.5rem;
+}
+.track-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+  color: white;
+  background: var(--text-muted);
+  padding: 2px 10px;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+/* ── Tag chips on cards ── */
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+}
+.card-tag {
+  font-size: 0.68rem;
+  background: #eef2f9;
+  color: var(--nau-blue);
+  padding: 2px 6px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+/* ── Filter hidden state ── */
+.project-card.is-hidden {
+  display: none;
+}
