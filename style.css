@@ -201,7 +201,11 @@ figcaption {
   font-size: 1.02rem;
   color: var(--text);
 }
-.trail-overview p { margin: 0; }
+.trail-overview p { margin: 0 0 0.75rem; }
+.trail-overview p:last-child { margin-bottom: 0; }
+.trail-overview-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
+.trail-overview-links a { color: var(--nau-blue); font-size: 0.88rem; text-decoration: underline; }
+.trail-overview-links a:hover { color: #002a5c; }
 
 /* ── Tag filter bar ── */
 .tag-filter-bar {
