@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Can AI Generate Qualitative Data for Software Engineering Research? — TRAIL Projects</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-brand">
+        <a href="../../index.html" class="brand-link">TRAIL Projects</a>
+      </div>
+      <nav class="breadcrumb">
+        <a href="../../index.html">← All Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="project-page">
+    <div class="project-hero">
+      <h1>Can AI Generate Qualitative Data for Software Engineering Research?</h1>
+      <p class="tagline">Testing whether LLMs can serve as human surrogates in surveys, interviews, and qualitative coding tasks.</p>
+      <p class="presenter">Presented by Marco A. Gerosa, Professor of Computer Science, Northern Arizona University</p>
+    </div>
+
+    <section class="project-summary">
+      <h2>About This Project</h2>
+      <p>Qualitative research in software engineering relies on surveys, interviews, and manual coding — methods that are slow, expensive, and hard to scale. Response rates for developer surveys routinely fall below 10%, certain demographics remain chronically under-represented, and recruiting professional programmers for studies is increasingly difficult. This project asks whether large language models can serve as viable stand-ins for human participants, generating synthetic qualitative data that mirrors what real populations would report.</p>
+      <p>Using a "mega-persona" prompting technique — instructing GPT-4 to respond as a population of N professionals with specified demographic characteristics — the team replicated 10 published software engineering surveys from top venues (ICSE, FSE, ASE). In 7 of the 10 studies, LLM-generated response distributions fell within 10 percentage points of the original human data, and in 6 of 9 analyzable studies, ChatGPT significantly outperformed a random baseline (p &lt; 0.05, Bonferroni corrected). The findings are promising but context-dependent: structured Likert-scale questions produced more reliable results than open-ended items, and training data contamination remains an open ethical and methodological concern. The team is now expanding to 50+ surveys, interview surrogates, and LLM-assisted qualitative coding, with an NSF proposal in development.</p>
+    </section>
+
+    <section class="project-visuals">
+      <h2>Project Highlights</h2>
+      <div class="figures">
+        <figure>
+          <img src="stills/still_01.jpg" alt="Four-step methodology for evaluating LLMs as survey surrogates: select studies, extract data, build mega-persona prompt, emulate and compare">
+          <figcaption>The four-step methodology: 10 published SE surveys were selected, their demographic and population data extracted, a mega-persona prompt constructed, and ChatGPT's response distributions compared to the original human data and a random baseline.</figcaption>
+        </figure>
+        <figure>
+          <img src="stills/still_02.jpg" alt="Box plot comparing ChatGPT response deltas to a random baseline across 9 replicated software engineering surveys, with 6 of 9 studies showing significant improvement">
+          <figcaption>Results across 9 replicated surveys: blue boxes show ChatGPT's absolute delta from original human responses, orange boxes show the random baseline. ChatGPT significantly outperformed the baseline in 6 of 9 studies, though 3 studies showed no meaningful advantage.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-video">
+      <h2>Presentation</h2>
+      <div class="video-wrapper">
+        <video controls preload="metadata">
+          <source src="DROPBOX_LINK_PENDING" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>TRAIL (Teaching, Research, and AI Learning) Projects &mdash; Northern Arizona University</p>
+  </footer>
+</body>
+</html>

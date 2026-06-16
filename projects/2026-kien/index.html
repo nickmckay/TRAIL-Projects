@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Python to Copilot: Scaling an AI Chatbot for Research Methods — TRAIL Projects</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-brand">
+        <a href="../../index.html" class="brand-link">TRAIL Projects</a>
+      </div>
+      <nav class="breadcrumb">
+        <a href="../../index.html">← All Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="project-page">
+    <div class="project-hero">
+      <h1>From Python to Copilot: Scaling an AI Chatbot for Research Methods</h1>
+      <p class="tagline">A Socratic AI tutor helps psychology students build critical thinking in research methods.</p>
+      <p class="presenter">Presented by Sara Kien, Associate Clinical Professor, Department of Psychological Sciences, NAU</p>
+    </div>
+
+    <section class="project-summary">
+      <h2>About This Project</h2>
+      <p>Students in psychology research methods courses routinely struggle with statistical anxiety, imposter phenomenon, and limited access to individualized support as class sizes grow and teaching assistant hours shrink. Sara Kien designed a custom AI chatbot named "Reese" to fill that gap. Rather than providing direct answers, Reese uses Socratic prompting: it responds to student queries with one or two guiding questions first, then offers deeper explanations only as needed. The chatbot was fine-tuned on course materials including the Belmont Report and APA Code of Ethics, ensuring responses stay grounded in the content students actually need.</p>
+      <p>Kien built an initial version using Python in Google Colab with ChromaDB for vector embeddings and Gradio for the interface, but availability constraints (the tool could only run while she actively monitored it) pushed her to migrate Reese into Microsoft Copilot Studio, which provides 24/7 access through NAU's existing IT infrastructure. Students are not required to use the tool; participation is voluntary, and an AI literacy curriculum accompanies the rollout to help students distinguish productive use from over-reliance. The project is designed to be scalable across disciplines and adaptable to any course-specific materials.</p>
+    </section>
+
+    <section class="project-visuals">
+      <h2>Project Highlights</h2>
+      <div class="figures">
+        <figure>
+          <img src="stills/still_01.jpg" alt="Slide comparing typical AI tools to the customized Reese chatbot approach">
+          <figcaption>Why not just ChatGPT? Reese is trained on course materials and responds with guiding questions first, promoting deeper thinking rather than providing direct answers.</figcaption>
+        </figure>
+        <figure>
+          <img src="stills/still_02.jpg" alt="Google Colab code showing the Reese chatbot system prompt and persona instructions">
+          <figcaption>The original Python-based Reese implementation in Google Colab, showing the system prompt that defines Reese's Socratic persona and pedagogical guardrails.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-video">
+      <h2>Presentation</h2>
+      <div class="video-wrapper">
+        <video controls preload="metadata">
+          <source src="DROPBOX_LINK_PENDING" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>TRAIL (Teaching, Research, and AI Learning) Projects &mdash; Northern Arizona University</p>
+  </footer>
+</body>
+</html>
